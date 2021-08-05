@@ -6,3 +6,21 @@ html{
     opacity: 0.9;
     text-align: center;
 }
+/* Header */
+
+header{
+    position: fixed;
+    top: 0%;
+    border-bottom: 1px solid seashell;
+    height: 69px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    margin: 10px 10px;
+}
+
+nav{
+    text-decoration: underline;
+}
