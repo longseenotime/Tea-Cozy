@@ -5,22 +5,85 @@ html{
     background-color: black;
     opacity: 0.9;
     text-align: center;
+    width: 100%;
+    
 }
+
+img{
+    max-width: 100%;
+}
+
 /* Header */
 
 header{
     position: fixed;
-    top: 0%;
+    top: 0px;
+    left: 0px;
     border-bottom: 1px solid seashell;
-    height: 69px;
+    width: 100%;
+    min-height: 3.18rem;
+    max-height: 3.18rem;
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
+    color: seashell;
+    flex-wrap: nowrap;
+    z-index: 10;
+    background-color: black;
 }
 
 .logo{
-    margin: 10px 10px;
+    margin: 0.45rem;
+    max-height: 2.27rem;
+    
 }
 
 nav{
     text-decoration: underline;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0,909rem;
+}
+
+nav a{
+    color: seashell; 
+    padding: 0.5rem;
+}
+
+/* Body */
+
+body{
+    position: relative;
+    top: 3.18rem;
+    font-family: Helvetica;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+}
+
+#mission{
+    height: 700px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: url("media/img-mission-background.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-shrink: 1;
+    
+}
+
+#mission .mission-text{
+    width: 100%;
+    background-color: black;
+    color: seashell; 
 }
