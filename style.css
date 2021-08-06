@@ -42,7 +42,7 @@ nav{
     text-decoration: underline;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
     margin: 0,909rem;
@@ -68,11 +68,14 @@ body{
     margin: 0px;
 }
 
+/* Main */
+
 main{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
 }
 
 #mission{
@@ -82,7 +85,8 @@ main{
     justify-content: center;
     flex-wrap: wrap;
     background-image: url("media/img-mission-background.jpg");
-    background-size: 1200px;
+    background-size: cover;
+    max-width: 1200px;
     background-repeat: no-repeat;
     background-position: center;
     flex-shrink: 2;
@@ -119,9 +123,9 @@ main{
     background-size: cover;
     background-repeat: no-repeat;
     flex-flow: row wrap;
-    height: 500px;
+    min-height: 500px;
     margin-top: 50px;
-    width: 1000px;
+    flex-shrink: 1;
 
 }
 
@@ -138,10 +142,11 @@ main{
 
 .contact{
     text-align: center;
-    height: 200px;
+    min-height: 200px;
 }
 
 footer{
     text-align: left;
     margin-left: 20px;
+    width: 100%;
 }
